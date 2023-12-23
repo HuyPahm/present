@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    /* background: rgb(225, 138, 138); */
+}
+.nut{
+    border: none;
+    outline: none;
+   text-decoration: none;
+    font-size: 50px;
+    top: 80%;
+}
+#xe{
+    animation: xe 2s ease;
+    transform-origin: center;
+}
+#than{
+    animation: than 2s ease-in-out infinite alternate;
+    transform-origin: top;
+}
+#dinh{
+    animation: top 2s ease-in-out infinite alternate;
+    transform-origin: top;
+}
+#sao{
+    animation: star 2ms infinite linear;
+    transform-origin: center ;
+    transform-box: fill-box;
+}
+#bi1,#bi2,#bi3,#bi4,#bi5,#bi6,#bi7,#bi8{
+    animation: sm 1s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#tuyet2{
+    animation: snowman 50ms ease-in-out infinite alternate;
+    transform-origin: top;
+}
+
+@keyframes xe{
+    from{
+        transform: rotateZ(0deg);
+    }to{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes sm{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
+}
+@keyframes than{
+    from{
+        transform: rotateX(0deg);
+    }to{
+       transform: rotateX(20deg);
+    }
+}
+@keyframes top{
+    from{
+        transform: rotateX(0deg);
+    }to{
+       transform: rotateX(20deg);
+    }
+}
+@keyframes star{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
+}
+@keyframes snowman{
+    from{
+        transform: rotateX(0deg);
+    }to{
+       transform: rotateX(20deg);
+    }
+}
